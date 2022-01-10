@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: vets
-          image: spring2go/spring-petclinic-vets-service:1.0.0.RELEASE
+          image: doubletrouble/spring-petclinic-vets-service:1.0.0.RELEASE
           resources:
             requests:
               memory: "128Mi"

@@ -13,7 +13,7 @@ spec:
         app: web
     spec:
       initContainers:
-        - image: spring2go/skywalking-agent-sidecar:6.6.0
+        - image: doubletrouble/skywalking-agent-sidecar:6.6.0
           name: sw-agent-sidecar
           imagePullPolicy: IfNotPresent
           command: ["sh"]
@@ -27,7 +27,7 @@ spec:
               name: sw-agent
       containers:
         - name: web
-          image: spring2go/spring-petclinic-web-app:1.0.0.RELEASE
+          image: doubletrouble/spring-petclinic-web-app:1.0.0.RELEASE
           env:
             - name: JAVA_OPTS
               value: -javaagent:/usr/skywalking/agent/skywalking-agent.jar

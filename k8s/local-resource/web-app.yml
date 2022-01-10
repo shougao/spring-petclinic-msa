@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: spring2go/spring-petclinic-web-app:1.0.0.RELEASE
+          image: doubletrouble/spring-petclinic-web-app:1.0.0.RELEASE
           resources:
             requests:
               memory: "128Mi"
